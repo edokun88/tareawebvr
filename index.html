@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS Personalizados -->     
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+
+   <script src="http://www.x3dom.org/release/x3dom.js"></script>
+    <link rel="stylesheet" href="http://www.x3dom.org/release/x3dom.css">
+    
+    
+    <title>¡Bienvenidos a Pokemon AR World!</title>
+  </head>
+    <body class="m-0 p-0 bg-dark">
+    <div class="container">
+      <div class="row">
+    <div class="col-md-12 col-sm-12 col-12 bg-success header text-center pt-2"><img src="images/Pokemon-logo.png" width="250" alt=""></div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-info col-12 text-light p-0">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-center text-center" id="navbarSupportedContent">
+    <ul class="navbar-nav  justify-content-center text-center text-light">
+      <li class="nav-item active bg-info">
+        <a class="nav-link text-light " href="#">Realidad Virtual <span class="sr-only">(current)</span></a>
+      </li>
+      
+      
+      <li class="nav-item bg-info">
+           <a class=" text-light nav-link bg-info" href="2.html">Panorámica 360</a>
+      </li>
+      
+      <li class="nav-item bg-info">
+           <a class="nav-link text-light bg-info" href="3.html">Modelo 3D estático</a>
+      </li>
+            <a class="nav-link text-light  bg-info" href="4.html">Modelo 3D animado</a>
+    </ul>
+    
+  </div>
+</nav>
+
+  
+  <div class="col-12 col-sm-12 col-12">
+
+    <div class="row p-0">
+      <div class="col-md-12 col-sm-12 col-12 bg-warning p-0">
+         <h1 class="text-center">Poke Balls <small>Da click en la pokeball para más info</small></h1>
+        
+         <x3d class="col-12 col-sm-12 col-12 p-0 m-0" >
+      <scene>
+          <background backUrl='texturas/espacio.jpg' bottomUrl='texturas/grass.jpg' frontUrl='texturas/espacio.jpg' leftUrl='texturas/espacio2.jpg' rightUrl='texturas/espacio2.jpg' topUrl='texturas/sky.jpg'></background>
+           <transform DEF='SSolar'>
+         <transform>
+         
+         
+         <Anchor description='Info pokeball'  
+    url='https://pokemon.fandom.com/es/wiki/Pok%C3%A9_Ball_(objeto)'> 
+          <shape>
+            <appearance>
+              <material diffuseColor='1 1 0'></material>
+              <imageTexture url='texturas/8.jpg'></imageTexture>
+            </appearance>
+            <sphere radius='1'></sphere>
+          </shape>
+             </Anchor>
+        </transform >
+     
+        
+      
+            <transform translation= '4 0 -6'>
+               <Anchor description='Info Amigo Ball'  
+    url='https://pokemon.fandom.com/es/wiki/Amigo_Ball'> 
+                  
+        <shape>
+       <appearance>
+         <imageTexture url='texturas/2.jpg'></imageTexture>
+         </appearance>
+        
+        <sphere radius='0.6'></sphere>
+                   </shape>
+                </Anchor> 
+            </transform>
+            
+                
+         <transform translation= '6 0 10'>
+          <Anchor description='Info super ball'  
+    url='https://pokemon.fandom.com/es/wiki/Super_Ball'> 
+         
+        <shape>
+       <appearance>
+         <imageTexture url='texturas/3.jpg'></imageTexture>
+         </appearance>
+        
+        <sphere radius='0.6'></sphere>
+            
+        
+        </shape>
+             </Anchor>
+        
+               </transform>
+            
+            
+         <transform translation= '8 0 -12'>
+                    <Anchor description='Info Parque Ball'  
+    url='https://pokemon.fandom.com/es/wiki/Parque_Ball_(cuarta_generaci%C3%B3n)'> 
+        <shape>
+       <appearance>
+         <imageTexture url='texturas/4.jpg'></imageTexture>
+         </appearance>
+        
+        <sphere radius='0.5'></sphere>
+        </shape>
+             </Anchor>
+        </transform>
+       
+           <transform translation= '-10 0 8'>
+                      <Anchor description='Info Malla Ball'  
+    url='https://pokemon.fandom.com/es/wiki/Malla_Ball'> 
+        <shape>
+       <appearance>
+         <imageTexture url='texturas/5.jpg'></imageTexture>
+         </appearance>
+        
+        <sphere radius='0.8'></sphere>
+        </shape>
+               </Anchor>
+        </transform>
+        
+        
+            <transform translation= '-12 0 -8' rotation='0 0 2, .47'>
+                       <Anchor description='Honor Ball'  
+    url='https://pokemon.fandom.com/es/wiki/Honor_Ball'> 
+            
+        <shape>
+       <appearance>
+         <imageTexture url='texturas/6.jpg'></imageTexture>
+         </appearance>
+        
+        <sphere radius='1'></sphere>
+        </shape>
+              
+                </Anchor>
+        </transform>
+        
+                 <transform translation= '-14 0 -16'>
+                 <Anchor description='Info Amor Ball'  
+    url='https://pokemon.fandom.com/es/wiki/Amor_Ball'> 
+        <shape>
+    
+       <appearance>
+         <imageTexture url='texturas/7.jpg'></imageTexture>
+         </appearance>
+        
+        <sphere radius='1.2'></sphere>
+        </shape>
+        
+                     </Anchor>
+        </transform>
+        
+                      <transform translation= '16 0 10'>
+                      <Anchor description='Info Master Ball'  
+    url='https://pokemon.fandom.com/es/wiki/Master_Ball'> 
+        <shape>
+       <appearance>
+         <imageTexture url='texturas/9.jpg'></imageTexture>
+         </appearance>
+        
+        <sphere radius='0.8'></sphere>
+        </shape>
+                          </Anchor>
+        </transform>
+<!-- Parámetros de animación: sensor de tiempo y cuál eje se animará -->
+          <timeSensor DEF='timer' cycleInterval='20' loop='true'></timeSensor>
+			    <orientationInterpolator DEF='rotator' key='0 0.5 1' keyValue='0 1 0 0 0 1 0 3.14 0 1 0 6.28'></orientationInterpolator>	  
+               </transform>
+       <!-- ROUTE canaliza el sensor de tiempo y la rotación al transform -->       
+        <ROUTE fromNode='timer' fromField='fraction_changed' toNode='rotator' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='rotator' fromField='value_changed' toNode='SSolar' toField='set_rotation'></ROUTE>
+      </scene>
+    </x3d>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-md-12 col-sm-12 col-12 bg-info p-4">
+         
+         
+            <p>Una Poké Ball (Pokébola en Hispanoamérica por el anime, モンスターボール Monstruo Ball en japonés), también conocida abreviadamente como ball, es un artilugio u objeto diseñado para servir dos funciones básicas en el mundo Pokémon, almacenar y transportar Pokémon, haciendo posible la captura de Pokémon.
+
+Su nombre proviene del inglés, «ball», que significa bola; y el prefijo «Poké» extraído de pocket, que significa bolsillo. La construcción del nombre hace clara alusión a su forma esférica y su pequeño tamaño, que permiten su fácil transporte y resguardo en los bolsillos del entrenador. En este sentido, tiene gran influencia en el nombre «Pokémon», pues este también deriva de pocket, y monsters, formando «monstruos de bolsillo». Los Pokémon no podrían ser tales, si las Poké Ball que los contienen no tuviesen ese tamaño.
+
+Las Poké Balls son posiblemente el símbolo más distintivo de la franquicia Pokémon. Además, en el mundo Pokémon también es frecuente encontrar referencias a estos aparatos, desde estadios de combate con su forma circular, hasta como elemento de decoración en paredes y suelos.</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Footer -->
+<footer class=" col-12 page-footer text-center font-small  p-0 m-0">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-light py-3">© 2020 Alumno: José Eduardo López Santana | Profesor: Francisco Estrada | USB México
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+      </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

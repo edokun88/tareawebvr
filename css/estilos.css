@@ -1,0 +1,26 @@
+div.row{
+	height: auto;
+}
+
+.header{
+	height: 120px;
+}
+
+
+/*# sourceMappingURL=estilos.css.map */
+
+
+.navbar .navbar-header,
+.navbar-collapse {
+    float:none;
+    display:inline-block;
+    vertical-align: top;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse  {
+        display: block;
+    }
+}
